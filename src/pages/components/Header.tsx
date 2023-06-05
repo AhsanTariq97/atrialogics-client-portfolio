@@ -16,19 +16,19 @@ const Header = () => {
         </header>
         <ul className='flex justify-start items-center space-x-6 mb-12'>
             <li className='w-10 h-10 flex items-center justify-center'>
-                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 transition-all"><AiOutlineMail size={28} /></Link>
+                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]"><AiOutlineMail size={28} /></Link>
             </li>
             <li className='w-10 h-10 flex items-center justify-center'>
-                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 transition-all"><BiSquare size={28} /></Link>
+                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]"><BiSquare size={28} /></Link>
             </li>
             <li className='w-10 h-10 flex items-center justify-center'>
-                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 transition-all"><BsGithub size={28} /></Link>
+                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]"><BsGithub size={28} /></Link>
             </li>
             <li className='w-10 h-10 flex items-center justify-center'>
-                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 transition-all"><FaCodepen size={28} /></Link>
+                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]"><FaCodepen size={28} /></Link>
             </li>
             <li className='w-10 h-10 flex items-center justify-center'>
-                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 transition-all"><FaLinkedinIn size={28} /></Link>
+                <Link href='' className="hover:bg-white hover:text-[#333333] rounded-full p-0 hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]"><FaLinkedinIn size={28} /></Link>
             </li>
         </ul>
     </>

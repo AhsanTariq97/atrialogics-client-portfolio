@@ -7,7 +7,7 @@ const Experiments = () => {
         <ul className='flex flex-col justify-between items-start space-y-10'>
           <li className="flex justify-start items-start space-x-4 max-w-lg group">
             <div className='min-w-[40px] min-h-[40px] flex items-center justify-center'>
-              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 transition-all'>
+              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]'>
                 <BsGithub size={28} />
               </div>
             </div>
@@ -18,7 +18,7 @@ const Experiments = () => {
           </li>
           <li className="flex justify-start items-start space-x-4 max-w-lg group">
             <div className='min-w-[40px] min-h-[40px] flex items-center justify-center'>
-              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 transition-all'>
+              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]'>
                 <BsGithub size={28} />
               </div>
             </div>
@@ -29,7 +29,7 @@ const Experiments = () => {
           </li>
           <li className="flex justify-start items-start space-x-4 max-w-lg group">
             <div className='min-w-[40px] min-h-[40px] flex items-center justify-center'>
-              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 transition-all'>
+              <div className='group-hover:bg-white group-hover:text-[#333333] rounded-full p-0 group-hover:p-2 duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]'>
                 <BsGithub size={28} />
               </div>
             </div>

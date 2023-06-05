@@ -24,7 +24,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <main className={`${rammetto.variable} ${roboto_mono.variable} bg-[#333333]`}>
+      <main className={`${rammetto.variable} ${roboto_mono.variable}`}>
         <Component {...pageProps} />
       </main>
     </SessionProvider>
