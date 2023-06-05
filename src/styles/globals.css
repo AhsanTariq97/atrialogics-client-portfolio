@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .move-nav-bg {
+    view-transition-name: work-bg;
+}
+::view-transition-group(work-bg) {
+    animation-duration: 5s;
+} */
+
+.move-nav-img {
+    view-transition-name: work-image;
+}
+::view-transition-group(work-image) {
+    animation-duration: 0.75s;
+}
+
+.move-detail {
+    view-transition-name: work-detail;
+}
+::view-transition-new(work-detail) {
+    animation: slide-from-right 0.75s;
+}
+@keyframes slide-from-right {
+    from { 
+        transform: translateX(100vw);
+    }
+}
+
+::view-transition-old(root) {
+    animation: fade-out 0.25s ease-in-out 1 forwards;
+}
+::view-transition-new(root) {
+    animation: slide-from-bottom 0.5s ease-in-out 1 forwards;
+}
+@keyframes slide-from-bottom {
+	from { transform: translateY(100%); }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+	to { opacity: 0; }
+}
