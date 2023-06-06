@@ -9,10 +9,22 @@
     animation-duration: 5s;
 } */
 
-.move-nav-img {
+.move-nav-img1 {
     view-transition-name: work-image;
 }
 ::view-transition-group(work-image) {
+    animation-duration: 2s;
+}
+.move-nav-img2 {
+    view-transition-name: work-image2;
+}
+::view-transition-group(work-image2) {
+    animation-duration: 5s;
+}
+.move-nav-img3 {
+    view-transition-name: work-image3;
+}
+::view-transition-group(work-image3) {
     animation-duration: 0.75s;
 }
 

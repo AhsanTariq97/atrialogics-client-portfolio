@@ -15,7 +15,7 @@ const Home: NextPage = () => {
             <main className="min-h-screen bg-[#d12312] text-white px-6 py-5 md:p-12">
                 <div className="max-w-[60rem] mx-auto">
                     <div className="max-w-2xl mx-auto mb-8 ">
-                        <Image src='/year-in-monzo-2020.png' className="w-full move-nav-img" alt='' width={800} height={800} />
+                        <Image src='/year-in-monzo-2020.png' className="w-full move-nav-img3" alt='' width={800} height={800} />
                     </div>
                     <WorkPageDetail />
                 </div>
