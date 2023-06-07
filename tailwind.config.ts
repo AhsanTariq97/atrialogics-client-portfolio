@@ -6,7 +6,9 @@ export default {
     extend: {
       fontFamily: {
         rammetto: ['var(--font-rammetto)'],
-        mono: ['var(--font-roboto-mono)'],
+      },
+      colors: {
+        designColor: '#333',
       },
     },
   },
