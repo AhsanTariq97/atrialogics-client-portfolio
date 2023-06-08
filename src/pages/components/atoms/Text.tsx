@@ -19,7 +19,7 @@ const Text: React.FC<TextProps> = ({ tag, children, fontFamily= '', size='sm' })
     const sizes = {
         sm: 'font-medium text-sm leading-normal',
         base: 'font-medium text-base leading-normal',
-        lg: 'my-text-base md:text-2xl leading-relaxed'
+        lg: 'font-medium text-lg md:text-2xl leading-relaxed'
     }
 
     return (
