@@ -1,9 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Header from "./components/organisms/Header";
-import Experiments from "./components/organisms/Experiments";
-import Volunteering from "./components/organisms/Volunteering";
-import RecentWork from "./components/organisms/RecentWork";
+import Header from "../components/organisms/Header";
+import Experiments from "../components/organisms/Experiments";
+import Volunteering from "../components/organisms/Volunteering";
+import RecentWork from "../components/organisms/RecentWork";
 
 const Home: NextPage = () => {
     return (

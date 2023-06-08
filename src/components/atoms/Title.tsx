@@ -16,13 +16,13 @@ const Title: React.FC<TitleProps> = ({ tag, children, fontFamily= '', hover='', 
   
     const Tag = tag
 
-    const classes = `${fontFamily} ${hover} ${className}`
+    const classes = `${fontFamily} ${hover} ${className} pb-2`
 
     const sizes = {
         sm: 'font-semibold text-sm leading-normal',
         base: 'font-bold text-base leading-normal',
-        lg: 'font-bold text-xl leading-relaxed',
-        xl: 'font-extrabold text-3xl leading-relaxed'
+        lg: 'font-semibold text-xl sm:text-2xl leading-relaxed',
+        xl: 'font-semibold text-2xl sm:text-3xl leading-relaxed'
     }
 
     return (
