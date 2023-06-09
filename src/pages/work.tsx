@@ -1,9 +1,8 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 import WorkPageDetail from "../components/organisms/WorkPageDetail";
 import Image from "next/image";
 
-const Home: NextPage = () => {
+const Home = () => {
     return (
         <>
             <Head>

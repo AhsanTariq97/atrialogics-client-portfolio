@@ -4,17 +4,18 @@ import React, { type ReactNode } from 'react'
 import { clsx } from 'clsx';
 
 interface TextProps {
-    tag: 'p' | 'span';
+    tag: 'p' | 'span' | 'figcaption';
     children: ReactNode;
     fontFamily?: string;
     size: 'sm' | 'base' | 'lg';
+    className?: string;
 }
 
-const Text: React.FC<TextProps> = ({ tag, children, fontFamily= '', size='sm' }) => {
+const Text: React.FC<TextProps> = ({ tag, children, fontFamily= '', size='sm', className='' }) => {
   
     const Tag = tag
 
-    const classes = `${fontFamily}`
+    const classes = `${fontFamily} ${className}`
 
     const sizes = {
         sm: 'font-medium text-sm leading-normal',
@@ -23,7 +24,7 @@ const Text: React.FC<TextProps> = ({ tag, children, fontFamily= '', size='sm' })
     }
 
     return (
-        <Tag className={clsx(sizes[size], classes)} >{children}</Tag>
+        <Tag className={clsx(sizes[size], classes)}>{children}</Tag>
   )
 }
 

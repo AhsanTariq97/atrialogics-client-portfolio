@@ -4,10 +4,10 @@ import ListItem from '../molecules/ListItem'
 const Volunteering = () => {
   return (
     <div className='mb-20'>
-        <Title tag='h2' fontFamily='font-rammetto' size='lg'>Volunteering</Title>
-        <ul className='flex flex-col justify-between items-start space-y-10 mt-5'>
-          {data.map(item => (<ListItem key={item.title} title={item.title} content={item.content} iconName={item.icon} />))}
-        </ul>
+      <Title tag='h2' fontFamily='font-rammetto' size='lg'>Volunteering</Title>
+      <ul className='flex flex-col justify-between items-start space-y-10 mt-5'>
+        {data.map(item => (<ListItem key={item.title} title={item.title} content={item.content} iconName={item.icon} />))}
+      </ul>
     </div>
   )
 }

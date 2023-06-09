@@ -15,14 +15,16 @@ model Article {
   title           String
   slug            String           @unique
   published       Boolean          @default(false)
+  createdAt       DateTime         @default(now())
   contentElements ContentElement[]
 }
 
 model ContentElement {
-  id        String  @id @default(auto()) @map("_id") @db.ObjectId
-  type      String
-  content   String
-  order     Int
-  article   Article @relation(fields: [articleId], references: [id])
-  articleId String  @db.ObjectId
+  id         String  @id @default(auto()) @map("_id") @db.ObjectId
+  type       String
+  content    String
+  imgCaption String?
+  order      Int
+  article    Article @relation(fields: [articleId], references: [id])
+  articleId  String  @db.ObjectId
 }

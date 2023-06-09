@@ -5,10 +5,10 @@ import WorkItem from '../molecules/WorkItem'
 const RecentWork = () => {
   return (
     <div className='mb-20'>
-        <Title tag='h2' fontFamily='font-rammetto' size='lg'>Recent Work</Title>
-        <ul className='flex flex-col justify-between items-start space-y-10 mt-5'>
-          {data.map(item => (<Link href={item.href} key={item.title}><WorkItem title={item.title} content={item.content} imageUrl={item.imageUrl} /></Link>))}
-        </ul>
+      <Title tag='h2' fontFamily='font-rammetto' size='lg'>Recent Work</Title>
+      <ul className='flex flex-col justify-between items-start space-y-10 mt-5'>
+        {data.map(item => (<Link href={item.href} key={item.title}><WorkItem title={item.title} content={item.content} imageUrl={item.imageUrl} /></Link>))}
+      </ul>
     </div>
   )
 }

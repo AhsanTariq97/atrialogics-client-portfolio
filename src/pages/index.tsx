@@ -1,11 +1,17 @@
-import { type NextPage } from "next";
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Head from "next/head";
 import Header from "../components/organisms/Header";
 import Experiments from "../components/organisms/Experiments";
 import Volunteering from "../components/organisms/Volunteering";
 import RecentWork from "../components/organisms/RecentWork";
+import Words from "~/components/organisms/Words";
+import { PrismaClient } from '@prisma/client';
 
-const Home: NextPage = () => {
+import type { Article } from "./blog/[slug]";
+
+const prisma = new PrismaClient();
+
+const Home = ({ articles }: {articles: Article[]}) => {
     return (
         <>
             <Head>
@@ -18,13 +24,20 @@ const Home: NextPage = () => {
                     <Header />
                     <RecentWork />
                     <Experiments />
-                    <Experiments />
-                    <Experiments />
+                    <Words articles={articles} />
                     <Volunteering />
                 </div>
             </div>
         </>
     );
 };
+
+export async function getStaticProps() {
+    const articles = await prisma.article.findMany({
+      include: { contentElements: true },
+    });
+
+    return { props: { articles: JSON.parse(JSON.stringify(articles)) }, revalidate: 1 };
+}
 
 export default Home;

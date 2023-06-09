@@ -10,9 +10,10 @@ interface TitleProps {
     hover?: string;
     size: 'sm' | 'base' | 'lg' | 'xl';
     className?: string;
+    id?: string;
 }
 
-const Title: React.FC<TitleProps> = ({ tag, children, fontFamily= '', hover='', size='base', className='' }) => {
+const Title: React.FC<TitleProps> = ({ tag, children, fontFamily= '', hover='', size='base', className='', id='' }) => {
   
     const Tag = tag
 
@@ -26,7 +27,7 @@ const Title: React.FC<TitleProps> = ({ tag, children, fontFamily= '', hover='', 
     }
 
     return (
-        <Tag className={clsx(sizes[size], classes)}>{children}</Tag>
+        <Tag id={id} className={clsx(sizes[size], classes)}>{children}</Tag>
   )
 }
 
